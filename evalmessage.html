@@ -2,7 +2,7 @@
 <html>
 <head>
   <script>
-    window.addEventListener('message', e => eval(e.data), {once: true})
+    window.onmessage = e => eval(e.data)
   </script>
 </head>
 <body>
