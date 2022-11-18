@@ -1,10 +1,10 @@
 on:
-	push:
-		branches:
-			- main
+  push:
+    branches:
+      - main
 
 jobs:
-	purge_cache:
-		runs-on: ubuntu-latest
-		steps:
-			- run: curl https://raw.githack.com/purge --data-urlencode 'files=https://rawcdn.githack.com/dglark/test/main/evalmessage.html' -v
+  purge_cache:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl https://raw.githack.com/purge --data-urlencode 'files=https://rawcdn.githack.com/dglark/test/main/evalmessage.html' -v
